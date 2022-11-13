@@ -1,0 +1,16 @@
+hosts:
+  - name: host1
+    conn_kwargs:
+      host: host1
+      port: 6379
+      socket_timeout: 0.1
+  - name: host2
+    conn_kwargs:
+      host: host2
+      port: 6379
+      socket_timeout: 0.1
+  - name: host3
+    conn_kwargs:
+      host: host3
+      port: 6379
+      socket_timeout: 0.1

@@ -1,0 +1,14 @@
+local: test1
+hosts:
+  - name: test1
+    conn_kwargs:
+      host: test1
+      port: 6379
+  - name: test2
+    conn_kwargs:
+      host: test2
+      port: 6379
+  - name: test3
+    conn_kwargs:
+      host: test3
+      port: 6379

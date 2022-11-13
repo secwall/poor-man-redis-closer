@@ -1,0 +1,35 @@
+version: '2.3'
+
+services:
+  runner:
+    build:
+      context: ./
+      dockerfile: ./demo/runner/Dockerfile
+    hostname: runner
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:rw
+    privileged: true
+  host1:
+    build:
+      context: ./
+      dockerfile: ./demo/redis/Dockerfile
+    hostname: host1
+    ports:
+      - 6379
+    privileged: true
+  host2:
+    build:
+      context: ./
+      dockerfile: ./demo/redis/Dockerfile
+    hostname: host2
+    ports:
+      - 6379
+    privileged: true
+  host3:
+    build:
+      context: ./
+      dockerfile: ./demo/redis/Dockerfile
+    hostname: host3
+    ports:
+      - 6379
+    privileged: true
